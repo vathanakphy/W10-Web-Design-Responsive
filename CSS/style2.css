@@ -1,0 +1,37 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+nav{
+   height: 60px;
+   background-color: rgb(45, 45, 45);
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   align-items: center;
+   padding: 0 30px 0 30px;
+}
+ul{
+   display: flex;
+   flex-direction: row;
+   column-gap: 35px;
+}
+ul>li{
+   list-style-type: none;
+}
+ul>li>a{
+   text-decoration: none;
+   color: white;
+}
+.fa-bars{
+   display: none;
+}
+@media (max-width:768px){
+   ul{
+      display: none;
+   }
+   .fa-bars{
+      display: block;
+   }
+}
